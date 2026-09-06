@@ -1,0 +1,45 @@
+.task-summary {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.task-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.task-summary-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.task-summary-pct {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+.task-summary-bar {
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.task-summary-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  border-radius: 99px;
+  transition: width 0.5s ease;
+}
+
+.task-summary-text {
+  margin: 0.6rem 0 0;
+  font-size: 0.82rem;
+  color: #94a3b8;
+}

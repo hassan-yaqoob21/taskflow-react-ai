@@ -1,0 +1,40 @@
+.task-filters {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.task-filter-btn {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 99px;
+  background: #fff;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.task-filter-btn:hover {
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.task-filter-btn:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.task-filter-btn-active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+.task-filter-btn-active:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #fff;
+}
