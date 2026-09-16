@@ -23,7 +23,17 @@ export default function App() {
   const [tasks, setTasks] = useLocalStorage('taskflow-tasks', initialTasks);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
-  const [activeView, setActiveView] = useState('dashboard');
+  const [activeView, setActiveView] = useState(() => {
+  if (typeof window !== "undefined") {
+    const path = window.location.pathname;
+
+    if (path === "/tasks") return "tasks";
+    if (path === "/settings") return "settings";
+    if (path === "/dashboard") return "dashboard";
+  }
+
+  return "dashboard";
+});
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [formModalOpen, setFormModalOpen] = useState(false);
   const [editingTask, setEditingTask] = useState(null);
